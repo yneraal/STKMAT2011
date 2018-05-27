@@ -2,8 +2,8 @@ require(ggplot2)
 # Formatting functions ####
 date_time <- function(dates, times, start_date) {
   first <- as.POSIXct("1970-01-01 00:00:00")
-  last <- as.POSIXct("2016-01-01 00:00:00")
-  orig <- difftime(last,first, units = "secs")
+  start_date <- as.POSIXct("2016-01-01 00:00:00")
+  orig <- difftime(start_date,first, units = "secs")
   dts <- paste(dates, times)
   dts1 <- as.POSIXct(dts, format = "%d.%m.%Y %H:%M:%S")
   dts2 <- dts1 - orig

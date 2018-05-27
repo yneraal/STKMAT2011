@@ -1,5 +1,5 @@
-\name{Date-Time}
-\alias{Date-Time}
+\name{date_time}
+\alias{date_time}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Format into Datetime
 %%  ~~function to do ... ~~
@@ -8,13 +8,16 @@
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-Date-Time(x)
+date_time(dates, times, )
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
+  \item{dates}{A vector or data frame column with dates}
+  \item{times}{A vector or data frame column with times
 %%     ~~Describe \code{x} here~~
+
 }
+  \item{start_date}{A POSIXct object giving the date and time of when the recording of events started}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
